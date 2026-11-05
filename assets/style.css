@@ -35,10 +35,11 @@ h1 + p { font-size: 1.15rem; color: #dce5db; }
 .data-node { top: 5%; left: 0; }
 .model-node { bottom: 5%; right: 0; background: var(--accent); color: var(--ink); font-size: 3rem; }
 .content-section { display: grid; grid-template-columns: minmax(210px, 1fr) minmax(0, 2fr); gap: clamp(2rem, 5vw, 5rem); padding-block: 3.5rem; border-bottom: 1px solid var(--line); }
-.section-heading .eyebrow { color: #667961; }
+.section-heading .eyebrow { display: block; color: #667961; }
 h2 { font-size: clamp(1.6rem, 2.6vw, 2.2rem); letter-spacing: -.04em; line-height: 1.18; margin: .8rem 0 0; }
 h3 { font-size: 1.15rem; margin: 2rem 0 .75rem; }
-.section-body { min-width: 0; }
+/* Match the title's top edge below the section label and its .8rem gap. */
+.section-body { min-width: 0; padding-top: calc(.72rem * 1.5 + .8rem); }
 .section-body > :first-child { margin-top: 0; }
 .section-body > :last-child { margin-bottom: 0; }
 p, li { overflow-wrap: anywhere; }
@@ -69,6 +70,7 @@ footer { padding-block: 1rem 2rem; display: flex; justify-content: space-between
   h1 { font-size: clamp(2.3rem, 9vw, 3.5rem); }
   .hero-actions { gap: .65rem; }
   .content-section { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding-block: 2.5rem; }
+  .section-body { padding-top: 0; }
   th, td { padding: .75rem .4rem; }
   th:first-child, td:first-child { width: 7rem; }
   footer { flex-direction: column; }
