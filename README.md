@@ -33,6 +33,8 @@ browser reload. Stop with **Ctrl+C**. To use a different port:
 | File | Purpose |
 | --- | --- |
 | `content/index.md` | All participant content: introduction, preparation, agenda, Miro link, demo guidance |
+| `content/tutorial.md` | Local-LLM tutorial, included where `<!-- include tutorial -->` appears in `content/index.md` |
+| `assets/tutorial/` | Downloadable original Python starter and its separate dependencies |
 | `assets/style.css` | Colors, typography, spacing, and mobile layout |
 | `templates/index.html` | Page shell, navigation, browser title, description, and footer |
 | `build.py` | Markdown conversion and local preview server |

@@ -1,6 +1,6 @@
 # Small models.<br>Useful experiments.
 
-LLM Hack a BIS brings research data and local AI together. Bring a problem,
+LLM Hack-a-BIS brings research data and local AI together. Bring a problem,
 form a team, and build something useful with openBIS.
 
 **Thursday 12 November 2026 · 10:00–17:00 · Berlin time**
@@ -10,30 +10,34 @@ form a team, and build something useful with openBIS.
 
 ## The idea
 
-A day to explore what local language models can do for research data.
+A day to explore what LLMs can do for research data.
 Start with a small question, try an approach, and share what you learn.
 A useful experiment is a great result—even if it is not a finished tool.
 
 ## Projects & teams
 
 Project descriptions, ideas, and team coordination live on our **Miro board**.
-We will use it throughout the workshop to choose a problem and capture results.
 
-**Miro board link coming soon.**
+[Click here](https://miro.com/welcomeonboard/WEtHbWc3UEFCQmRDeExaUk5lRUIza3RiMGpqUXF3WThwcWhvYytPYXJDNWZiMmpQbFBQbC80Y1NIaTRBa1ZpMmlPNmJNR0JScmdvaXNlZzZTZ1FiblBHTFZybXluYmd6M0lhVkxjTmpWTUt4cE04M3ZEQmFPVGwvbnJIZDc1QWhhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=874327135041) to open the Miro board.
 
 <!-- Replace the line above with: [Open the Miro board →](https://miro.com/app/board/YOUR_BOARD_ID/) -->
 
-## Before you arrive
+## The agenda
 
-Bring your laptop and charger. Please try the setup before Thursday so we can
-spend more of the day building together.
+| Time | What we will do |
+| --- | --- |
+| 10:00–10:30 | Welcome, local LLM introduction, and setup check |
+| 10:30–12:00 | Explore the Miro board, form teams, and start experimenting |
+| 12:00–13:00 | Pizza break |
+| 13:00–17:00 | Build, test, and discuss your short demo |
+
+## Before you arrive 
 
 ### 1. Install Ollama
 
 Go to [ollama.com/download](https://ollama.com/download), choose your operating
 system, download the installer, and run it. On Windows, use the Windows download
-and follow the installer prompts. José has tested this installation on a BAM
-Windows workstation/laptop and it worked.
+and follow the installer prompts. 
 
 Open Ollama, then open a new PowerShell or terminal window and check:
 
@@ -42,16 +46,14 @@ ollama --version
 ```
 
 If the command is not found, close and reopen your terminal after installation.
-If installation is blocked or the check fails, bring the error message to the
-workshop so we can troubleshoot together.
 
 ### 2. Download and try a local model
 
 Download the model before the workshop; this may take a while:
 
 ```text
-ollama pull qwen3:4b
-ollama run qwen3:4b
+ollama pull qwen3:1.7b
+ollama run qwen3:1.7b
 ```
 
 Try a short prompt, such as “Suggest three ways to improve research metadata.”
@@ -67,18 +69,7 @@ Check your version in a terminal:
 python --version
 ```
 
-On Windows, try `py --version` if `python` is not available. If you need Python,
-the [official Python downloads page](https://www.python.org/downloads/) has
-installers. Install the packages your team needs once you have chosen a project.
-
-## The agenda
-
-| Time | What we will do |
-| --- | --- |
-| 10:00–10:30 | Welcome, local LLM introduction, and setup check |
-| 10:30–12:00 | Explore the Miro board, form teams, and start experimenting |
-| 12:00–13:00 | Pizza break |
-| 13:00–17:00 | Build, test, and discuss your short demo |
+For BAM employees: go to the Symantec Software Portal and download `Miniforge3 mit Python 3.14`.
 
 ## Build small. Share what you learn.
 
@@ -88,6 +79,8 @@ prompt, model, and result so you can explain what worked and what still needs wo
 For your demo, aim for **4 minutes to present and 2 minutes for questions**.
 Show the problem, a short example, and one thing you learned. A failed experiment
 with a clear lesson is welcome too.
+
+<!-- include tutorial -->
 
 ## Useful links
 

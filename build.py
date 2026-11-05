@@ -14,8 +14,13 @@ OUTPUT = ROOT / "dist"
 
 
 def build():
+    source = (ROOT / "content/index.md").read_text(encoding="utf-8")
+    source = source.replace(
+        "<!-- include tutorial -->",
+        (ROOT / "content/tutorial.md").read_text(encoding="utf-8"),
+    )
     content = markdown.markdown(
-        (ROOT / "content/index.md").read_text(encoding="utf-8"),
+        source,
         extensions=["fenced_code", "tables", "toc", "attr_list"],
     )
     # Markdown stays editable; sections get consistent responsive wrappers.
